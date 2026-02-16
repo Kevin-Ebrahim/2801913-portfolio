@@ -3,64 +3,77 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Kevin's Portfolio</title>
+    <title>My Portfolio</title>
+    <style>
+        body {
+            font-family: Arial, Helvetica, sans-serif;
+            color: #333;
+        }
+
+        #main-header {
+            background-color: cornsilk;
+            text-align: center;
+            padding: 20px;
+        }
+
+        h1 {
+            font-size: xx-large;
+        }
+
+        h2 {
+            color: #333;
+        }
+
+        nav ul {
+            display: flex;
+            list-style: none;
+        }
+
+        .card {
+            padding: 15px;
+            border: 1px solid #ddd;
+            border-radius: 8px;
+            margin: 10px 0;
+        }
+
+        a {
+            color: darkolivegreen;
+        }
+
+        footer {
+            background-color: cornsilk;
+        }
+
+    </style>
 </head>
 <body>
-    <header>
-        <h1>Welcome to Kevin's Portfolio</h1>
+    <header id="main-header">
+        <h1>Kevin Ebrahim</h1>
+        <p>Student ID: 2801913</p>
     </header>
 
     <nav>
         <ul>
-            <li><a href="#">Home</a></li>
-            <li><a href="#">Projects</a></li>
-            <li><a href="#">Contact</a></li>
+            <li><a href="#about">About</a></li>
+            <li><a href="#projects">Projects</a></li>
+            <li><a href="#contact">Contact</a></li>
         </ul>
     </nav>
 
     <main>
-        <section>
+        <section class="card" id="about">
             <h2>About Me</h2>
-            <p>
-                My name is Kevin and I am currently studying Computer Science at the University of the Witwatersrand.  
-                I am learning web development as part of my software design course, but I also see these skills as valuable for my own 
-                personal development going forward. So far, the main concept I have learned is HTML, which helped me understand how web pages 
-                are structured and how content is organised for users.  
-                I have also started learning how CSS can be used to improve the visual design and layout of a website.  
-                My goal is to eventually build a solid, well-designed, and user-friendly web application.
-            </p>
-
-            <p>
-                In addition to web development, I have also worked on a High Performance Computing project, which strengthened my practical 
-                experience with Linux systems and automation. This project helped me improve my problem-solving and scripting skills, as well 
-                as my ability to plan and design technical systems as part of a team. It also gave me a better understanding of how 
-                large-scale computing environments are built and managed in real-world scenarios.
-            </p>
+            <p>Write a short paragraph about yourself here. Include your interests, your field of study, and what you hope to achieve in this course.</p>
         </section>
 
-        <article>
-            <h3>Latest Project</h3>
-
-            <p>
-                My latest project focused on High Performance Computing and was completed as part of a group project. 
-                I worked on a Linux-based environment using the Ubuntu Server distribution, where we relied heavily on Bash scripting 
-                to automate the compilation of applications from source, system configuration, and execution of benchmarking workloads. 
-                My main contributions were developing the automation scripts and designing the network plan for the team. 
-                As a result, we successfully built the system and benchmarked several high-performance computing applications to 
-                evaluate and validate the cluster's performance.
-            </p>
-
-            <p>
-                Through this project, I gained practical experience in working with server environments, troubleshooting build and
-                runtime issues,
-                and coordinating technical decisions within a team. The project also improved my understanding of how performance,
-                networking,
-                and system configuration affect real-world high-performance computing workloads.
-            </p>
+        <article class="card" id="projects">
+            <h2>Latest Project</h2>
+            <p>Describe a project you have worked on or are currently working on. This could be a personal project, a group assignment, or something you built for fun.</p>
         </article>
     </main>
 
-    <footer> © 2026 2801913 | Built with Semantic HTML</footer>
-    
+    <footer>
+        <p>&copy; 2025 Kevin Ebrahim. All rights reserved.</p>
+    </footer>
 </body>
 </html>
